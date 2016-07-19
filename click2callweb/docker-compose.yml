@@ -1,0 +1,10 @@
+version: '2'
+services:
+  c2cwebdemo:
+    build: .
+    image: c2cwebdemo
+    ports:
+      - "80:80"
+    entrypoint:
+      - apache2ctl
+      - -DFOREGROUND
