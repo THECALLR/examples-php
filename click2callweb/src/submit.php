@@ -11,7 +11,7 @@ if(($_POST['callr_login'] & $_POST['callr_password'] & $_POST['callr_target']) =
      }
 } else {
         $api->setAuthCredentials($_POST['callr_login'], $_POST['callr_password']);
-        $target_number = $_POST['target'];
+        $target_number = $_POST['callr_target'];
 }
 
 $client_phone = new stdClass;
