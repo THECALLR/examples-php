@@ -17,7 +17,6 @@
 - - -
 
 ## General information
-
 This repo contains a collection of projects and scripts both stand alone and *dockerized* that make use of the Callr PHP SDK
 
 - - - 
@@ -38,7 +37,6 @@ and use the `Kitematic` application to manage your containers and view their log
 ### docker-compose  
 On Windows and Mac the docker-compose utility is installed automatically with docker-toolbox  
 For other users, follow the instructions on the official [Docker website here](https://docs.docker.com/compose/install/)
-
 
 - - -
 
