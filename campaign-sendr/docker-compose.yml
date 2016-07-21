@@ -1,0 +1,8 @@
+version: '2'
+services:
+  script:
+    build: .
+    entrypoint:
+      - php
+    env_file: ./credentials.txt
+    

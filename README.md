@@ -10,6 +10,8 @@
     * [Without php-composer](#with-php-composer)
 * [Examples](#examples)
     * [Click to Call Web](#click-to-call-web)
+    * [Create scheduled IVR campaign](#create-scheduled-ivr-campaign)
+    * [Send SMS](#send-sms)
 * [Cleanup](#cleanup)
     * [Container cleanup](#container-cleanup)
 * [Further help](#further-help)
@@ -133,6 +135,33 @@ for container cleanup after the script has terminated.
 ### Click to Call web
 * Located in /click2callweb, a Docker/docker-compose project that shows off the ClickToCall functionality of the Callr API.  
 See the [project README](click2callweb/README.md) for more information.
+
+### Create scheduled IVR campaign
+* Located in /campaign-sendr, a Docker/docker-compose project showing how to create a scheduled campaign that utilises IVR and bridging features of the Callr **SendR** API.  
+See the [project README](campaign-sendr/README.md) for more information.
+
+### Send SMS
+* The PHP script `sms.php` located in the repo root, allows you to send an SMS and check its status  
+Usage: 
+```
+$ php sms.php send +33123456789 'Hello from CALLR!'
+Starting script sms.php
+To: +33123456789
+Message: 'Hello from CALLR!'
+Returned result from sms.send: H45HC0D3
+
+$ php sms.php status H45HC0D3
+stdClass Object
+(
+    [type] => OUT
+    [hash] => H45HC0D3
+    [from] =>
+    [to] => +33123456789    
+    [text] => hello from bob, how are you?
+    ...
+    [date_received] => 2016-01-01 06:06:06
+)
+```
 
 - - -
 
