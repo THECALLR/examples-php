@@ -143,6 +143,7 @@ See the [project README](campaign-sendr/README.md) for more information.
 ### Send SMS
 * The PHP script `sms.php` located in the repo root, allows you to send an SMS and check its status  
 Usage: 
+
 ```
 $ php sms.php send +33123456789 'Hello from CALLR!'
 Starting script sms.php
