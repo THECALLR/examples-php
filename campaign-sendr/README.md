@@ -128,7 +128,7 @@ If not started immediately, the campaign will auto start if within the scheduled
     Successfully imported media file
     ``` 
 
-3. Run the following to upload your addressbook you created or modifed in step 2  
+3. Run the following to upload your addressbook you created or modifed in step 1  
     ```
     $ php upload.addressbook.php scripts/samples/addressbook.csv 'Addressbook 1' 'My first addressbook' 
     Pushing addressbook, job id: 123456789814799592tlqabcdefghi . Done!
