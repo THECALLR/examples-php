@@ -19,7 +19,7 @@
 - - -
 
 ## General information
-This repo contains a collection of projects and scripts both stand alone and *dockerized* that make use of the Callr PHP SDK
+This repo contains a collection of projects and scripts both stand alone and *dockerized* that make use of the CALLR PHP SDK
 
 - - - 
 
@@ -57,12 +57,15 @@ The download page contains instructions and necessary files for installation on 
     }
     ```
 
-2. In your project source files, be sure to require the file `autoload.php`
+2. As an alternative, to automatically create the composer.json and install the sdk run `composer require callr/sdk-php:dev-master`
+
+3. In your project source files, be sure to require the file `autoload.php`
     ```php
     <?php
         require 'vendor/autoload.php';
     ```
-3. Run `composer update`, which will download the sdk either via git ( if found in the environment ), or a zip and install it into the *vendor* directory. 
+
+4. Run `composer update`, which will download the sdk either via git ( if found in the environment ), or a zip and install it into the *vendor* directory. 
     ```bash
     $ composer update
     Loading composer repositories with package information
@@ -73,7 +76,7 @@ The download page contains instructions and necessary files for installation on 
     Writing lock file
     Generating autoload files
     ```
-- - -
+---
 
 ## Without php-composer
 If you wish to use the sdk without the dependency management of php-composer it is possible with the following steps
@@ -133,11 +136,11 @@ for container cleanup after the script has terminated.
 * If cloned from the git repository, all docker-compose commands must be run in the same folder as the `Dockerfile`  
 
 ### Click to Call web
-* Located in /click2callweb, a Docker/docker-compose project that shows off the ClickToCall functionality of the Callr API.  
+* Located in /click2callweb, a Docker/docker-compose project that shows off the ClickToCall functionality of the CALLR API.  
 See the [project README](click2callweb/README.md) for more information.
 
 ### Create scheduled IVR campaign
-* Located in /campaign-sendr, a Docker/docker-compose project showing how to create a scheduled campaign that utilises IVR and bridging features of the Callr **SendR** API.  
+* Located in /campaign-sendr, a Docker/docker-compose project showing how to create a scheduled campaign that utilises IVR and bridging features of the CALLR **SendR** API.  
 See the [project README](campaign-sendr/README.md) for more information.
 
 ### Send SMS
