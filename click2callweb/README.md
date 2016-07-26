@@ -24,7 +24,7 @@ SetEnv APP_ID <app id>
 * CALLR_PASS is the password you use to access CALLR services
 * CALLR_TARGET is the target telephone number to forward client calls to, when they submit the web form
 * APP_ID (optional) is the ID of a predefined click2call application, that will be reused for each client call, otherwise a new one will be
-created each time.
+created and stored as a file `H45HC0D3.clicktocall.id`
 
 A typical `.htaccess` for Bob Smith, with a telephone number of '+336123456789' and a predefined click to call application would look like the following:
 ```

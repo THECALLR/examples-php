@@ -104,7 +104,8 @@ SetEnv APP_ID &lt;app id&gt;
 <li>CALLR_PASS is the password you use to access CALLR services</li>
 <li>CALLR_TARGET is the target telephone number to forward client calls to, when they submit the web form</li>
 <li>APP_ID (optional) is the ID of a predefined click2call application, that will be reused for each client call, otherwise a new one will be
-created each time.</li>
+created and stored as a file <code>H45HC0D3.clicktocall.id</code>
+</li>
 </ul>
 
 <p>A typical <code>.htaccess</code> for Bob Smith, with a telephone number of '+336123456789' and a predefined click to call application would look like the following:</p>
@@ -204,13 +205,14 @@ Removing intermediate container ab5d4eae9847
 <hr>
 
 
+
 <!-- end readme paste area -->        
 </div>
 <script>
 $("#clicktocall_form").submit(function(e) {
     $.ajax({
            type: "POST",
-           url: "/submit.php",
+           url: "submit.php",
            data: $("#clicktocall_form").serialize(), 
            success: function(data)
            {

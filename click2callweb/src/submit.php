@@ -25,10 +25,15 @@ $target->timeout = 30;
 $result = new stdClass;
 try {
     $appId;
-    if(getenv('APP_ID') == ""){
-        // no application id defined, create one each call.
+    $appIdFile = glob('*.clicktocall.id');
+    if(getenv('APP_ID') == "" && count($appIdFile) == 0) {
+        // no application id defined, create one and create id file.
         $c2cApp = $api->call('apps.create', ["CLICKTOCALL10","connect_us_web", NULL]);
+        touch($c2cApp->hash.'.clicktocall.id');
         $appId = $c2cApp->hash;
+    } elseif(getenv('APP_ID') == "" && count($appIdFile) > 0) {
+        // take id from created id file.
+        $appId = str_replace('.clicktocall.id', '', $appIdFile[0]);
     } else {
         // reuse defined app id
         $appId = getenv('APP_ID');
