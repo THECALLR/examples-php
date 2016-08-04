@@ -57,7 +57,7 @@ For other users, follow the instructions on the official [Docker website here](h
 
 3. After installing `Docker` and `docker-compose`, run the following command in the same directory as **Dockerfile**, 
     ```
-    $ docker-compose up c2cwebdemo
+    $ docker-compose up
     ```
     you will see output similar to the following:   
     ```
@@ -79,6 +79,8 @@ For other users, follow the instructions on the official [Docker website here](h
     ```
 
 4. You can then connect to the docker container ip address with http:// to view the website. ( the ip address is displayed with the initial startup of the docker quickstart console )
+
+5. If any modifications are made to the project, you will need to restart the container and rebuild the image, this can be done with the docker-compose command `docker-compose up --build`.
 
 ### Windows
 When running on windows, you should use the `Kitematic` utility to view the container output and website. 

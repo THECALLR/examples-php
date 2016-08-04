@@ -60,6 +60,7 @@
 <div class="container">
 <!-- start readme paste area -->
 
+
 <h1>
 <a id="readme-click-to-call-web-sample" class="anchor" href="#readme-click-to-call-web-sample" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>README Click to Call Web sample</h1>
 
@@ -149,7 +150,7 @@ For other users, follow the instructions on the official <a href="https://docs.d
 <li>
 <p>After installing <code>Docker</code> and <code>docker-compose</code>, run the following command in the same directory as <strong>Dockerfile</strong>, </p>
 
-<pre><code>$ docker-compose up c2cwebdemo
+<pre><code>$ docker-compose up
 </code></pre>
 
 <p>you will see output similar to the following:   </p>
@@ -172,6 +173,7 @@ Removing intermediate container ab5d4eae9847
 </code></pre>
 </li>
 <li><p>You can then connect to the docker container ip address with http:// to view the website. ( the ip address is displayed with the initial startup of the docker quickstart console )</p></li>
+<li><p>If any modifications are made to the project, you will need to restart the container and rebuild the image, this can be done with the docker-compose command <code>docker-compose up --build</code>.</p></li>
 </ol>
 
 <h3>
@@ -203,7 +205,6 @@ Removing intermediate container ab5d4eae9847
 </ul>
 
 <hr>
-
 
 
 <!-- end readme paste area -->        
