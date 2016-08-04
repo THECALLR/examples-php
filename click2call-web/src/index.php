@@ -104,7 +104,7 @@ SetEnv APP_ID &lt;app id&gt;
 <li>CALLR_PASS is the password you use to access CALLR services</li>
 <li>CALLR_TARGET is the target telephone number to forward client calls to, when they submit the web form</li>
 <li>APP_ID (optional) is the ID of a predefined click2call application, that will be reused for each client call, otherwise a new one will be
-created and stored as a file <code>H45HC0D3.clicktocall.id</code>
+created and stored as in the file <code>click2call.appid</code>
 </li>
 </ul>
 
@@ -129,7 +129,7 @@ SetEnv APP_ID H45HC0D3
 
 <p>Docker is available for download on their website <a href="https://www.docker.com/products/overview">https://www.docker.com/</a></p>
 
-<p>On Windows make sure you install <a href="https://www.docker.com/products/docker-toolbox">Docker toolbox</a>, 
+<p>On Windows make sure you install <a href="https://www.docker.com/products/docker-toolbox">Docker toolbox</a>, or <a href="https://www.docker.com/products/docker#/windows">Docker for Windows (Requires Microsoft Windows 10 Professional or Enterprise 64-bit)</a>
 and use the <code>Kitematic</code> application to manage your containers and view their logs and output (installed by default)</p>
 
 <h3>
