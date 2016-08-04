@@ -136,8 +136,8 @@ for container cleanup after the script has terminated.
 * If cloned from the git repository, all docker-compose commands must be run in the same folder as the `Dockerfile`  
 
 ### Click to Call web
-* Located in /click2callweb, a Docker/docker-compose project that shows off the ClickToCall functionality of the CALLR API.  
-See the [project README](click2callweb/README.md) for more information.
+* Located in /click2call-web, a Docker/docker-compose project that shows off the ClickToCall functionality of the CALLR API.  
+See the [project README](click2call-web/README.md) for more information.
 
 ### Create scheduled IVR campaign
 * Located in /campaign-sendr, a Docker/docker-compose project showing how to create a scheduled campaign that utilises IVR and bridging features of the CALLR **SendR** API.  

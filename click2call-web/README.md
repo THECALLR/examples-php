@@ -24,7 +24,7 @@ SetEnv APP_ID <app id>
 * CALLR_PASS is the password you use to access CALLR services
 * CALLR_TARGET is the target telephone number to forward client calls to, when they submit the web form
 * APP_ID (optional) is the ID of a predefined click2call application, that will be reused for each client call, otherwise a new one will be
-created and stored as a file `H45HC0D3.clicktocall.id`
+created and stored as in the file `click2call.appid`
 
 A typical `.htaccess` for Bob Smith, with a telephone number of '+336123456789' and a predefined click to call application would look like the following:
 ```
@@ -41,7 +41,7 @@ SetEnv APP_ID H45HC0D3
 ### Docker
 Docker is available for download on their website [https://www.docker.com/](https://www.docker.com/products/overview)
 
-On Windows make sure you install [Docker toolbox](https://www.docker.com/products/docker-toolbox), 
+On Windows make sure you install [Docker toolbox](https://www.docker.com/products/docker-toolbox), or [Docker for Windows (Requires Microsoft Windows 10 Professional or Enterprise 64-bit)](https://www.docker.com/products/docker#/windows)
 and use the `Kitematic` application to manage your containers and view their logs and output (installed by default)
 
 ### docker-compose  
