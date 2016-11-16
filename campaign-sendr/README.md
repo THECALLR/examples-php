@@ -201,12 +201,8 @@ Here we can issue another status command to view our campaign statistics and sta
 
 - - -
 
-# Further help
-* You will find API documentation and snippets here at [http://thecallr.com/docs/](http://thecallr.com/docs/)
+## Further help
+* You will find API documentation and snippets here at [http://www.callr.com/docs/](http://www.callr.com/docs/)
 * Or on github in our repository [https://github.com/THECALLR/](https://github.com/THECALLR/)
- 
-If you have any further questions or require assistance with these examples, please contact CALLR Support
-* support@callr.com
-* FR: +33 (0)1 84 14 00 30 
 
 ---

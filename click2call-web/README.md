@@ -38,13 +38,24 @@ SetEnv APP_ID H45HC0D3
 ---
 
 ## Installation
-### Docker
+### Docker installation
 Docker is available for download on their website [https://www.docker.com/](https://www.docker.com/products/overview)
 
-On Windows make sure you install [Docker toolbox](https://www.docker.com/products/docker-toolbox), or [Docker for Windows (Requires Microsoft Windows 10 Professional or Enterprise 64-bit)](https://www.docker.com/products/docker#/windows)
+#### Windows
+On Windows you can install [Docker toolbox](https://www.docker.com/products/docker-toolbox), 
+or [Docker for Windows (Requires Microsoft Windows 10 Professional or Enterprise 64-bit)](https://www.docker.com/products/docker#/windows)
 and use the `Kitematic` application to manage your containers and view their logs and output (installed by default)
 
-### docker-compose  
+#### Mac
+On a Mac you can install [Docker toolbox](https://www.docker.com/products/docker-toolbox),
+or [Docker for Mac (Requires Apple macOS Yosemite 10.10.3 or above )](https://www.docker.com/products/docker#/mac)
+and use the `Kitematic` application to manage your containers and view their logs and output (installed by default)
+
+#### Linux
+Either download and install Docker using your distributions package manager, 
+or follow the instructions on the official [Docker website here](https://docs.docker.com/engine/installation/linux/)
+
+### docker-compose installation
 On Windows and Mac the docker-compose utility is installed automatically with docker-toolbox  
 For other users, follow the instructions on the official [Docker website here](https://docs.docker.com/compose/install/)
 
@@ -91,13 +102,8 @@ After launching the docker-compose command, from the `Kitematic` utility windows
 ---
 
 ## Further help
-* You will find API documentation and snippets here at [http://thecallr.com/docs/](http://thecallr.com/docs/)
+* You will find API documentation and snippets here at [http://www.callr.com/docs/](http://www.callr.com/docs/)
 * Or on github in our repository [https://github.com/THECALLR/](https://github.com/THECALLR/)
- 
-If you have any further questions or require assistance with these examples, please contact CALLR Support
-* support@callr.com
-* FR: +33 (0)1 84 14 00 30 
-* US: +1 (646) 982-0830
 
 ---
 

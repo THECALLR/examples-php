@@ -6,8 +6,8 @@
     * [Requirements](#requirements)
         * [Docker](#docker)
         * [docker-compose](#docker-compose)
-    * [With php-composer](#with-php-composer)
-    * [Without php-composer](#with-php-composer)
+    * [With Composer](#with-composer)
+    * [Without Composer](#with-composer)
 * [Examples](#examples)
     * [Click to Call Web](#click-to-call-web)
     * [Create scheduled IVR campaign](#create-scheduled-ivr-campaign)
@@ -42,8 +42,8 @@ For other users, follow the instructions on the official [Docker website here](h
 
 - - -
 
-## With php-composer
-php-composer ([https://getcomposer.org/download/](https://getcomposer.org/download/)) is recommended for use with the sdk and for managing your project dependencies.  
+## With Composer
+Composer ([https://getcomposer.org/download/](https://getcomposer.org/download/)) is recommended for use with the sdk and for managing your project dependencies.  
 The download page contains instructions and necessary files for installation on Windows and other platforms.  
 * if not being installed as root/super user, make sure to use the switch **--install-dir=**  
 
@@ -52,25 +52,24 @@ The download page contains instructions and necessary files for installation on 
     ```json
     {
       "require": {
-        "callr/sdk-php": "dev-master"
+        "callr/sdk-php": "^0.9"
       }
     }
     ```
 
-2. As an alternative, to automatically create the composer.json and install the sdk run `composer require callr/sdk-php:dev-master`
+2. As an alternative, to automatically create the composer.json and install the sdk run `composer require callr/sdk-php:^0.9`
 
 3. In your project source files, be sure to require the file `autoload.php`
     ```php
     <?php
         require 'vendor/autoload.php';
     ```
-
 4. Run `composer update`, which will download the sdk either via git ( if found in the environment ), or a zip and install it into the *vendor* directory. 
     ```bash
     $ composer update
     Loading composer repositories with package information
     Updating dependencies (including require-dev)
-    - Installing callr/sdk-php (dev-master 09a2e40)
+    - Installing callr/sdk-php (v0.9.1)
     Loading from cache
 
     Writing lock file
@@ -78,8 +77,8 @@ The download page contains instructions and necessary files for installation on 
     ```
 ---
 
-## Without php-composer
-If you wish to use the sdk without the dependency management of php-composer it is possible with the following steps
+## Without Composer
+If you wish to use the sdk without the dependency management of Composer it is possible with the following steps
 
 1. Download the sdk from the CALLR [php-sdk github](https://github.com/THECALLR/sdk-php/archive/master.zip)
 
@@ -140,7 +139,7 @@ for container cleanup after the script has terminated.
 See the [project README](click2call-web/README.md) for more information.
 
 ### Create scheduled IVR campaign
-* Located in /campaign-sendr, a Docker/docker-compose project showing how to create a scheduled campaign that utilises IVR and bridging features of the CALLR **SendR** API.  
+* Located in /campaign-sendr, a Docker/docker-compose project showing how to create a scheduled campaign that utilises IVR and bridging features of the CALLR **SENDR** API.  
 See the [project README](campaign-sendr/README.md) for more information.
 
 ### Send SMS
@@ -189,12 +188,8 @@ Advanced users can remove containers and images with *docker rm/rmi*
 
 - - -
 
-# Further help
-* You will find API documentation and snippets here at [http://thecallr.com/docs/](http://thecallr.com/docs/)
+## Further help
+* You will find API documentation and snippets here at [http://www.callr.com/docs/](http://www.callr.com/docs/)
 * Or on github in our repository [https://github.com/THECALLR/](https://github.com/THECALLR/)
- 
-If you have any further questions or require assistance with these examples, please contact CALLR Support
-* support@callr.com
-* FR: +33 (0)1 84 14 00 30 
 
 ---

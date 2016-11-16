@@ -36,7 +36,7 @@ try {
     exit;
 }
 
-// poll for job status, should be replaced by a webhook (http://thecallr.com/docs/webhooks)
+// poll for job status, should be replaced by a webhook (http://www.callr.com/docs/webhooks)
 $job;
 do {
     sleep(1);
@@ -68,7 +68,7 @@ try {
         $ADDRESSBOOK_PHONENUMBER_COL_INDEX, $ADDRESSBOOK_COUNTRY_CODE, null]);
     echo "Addressbook import job id: {$importJobId} ";
 
-    // poll for job status, could be replaced by a webhook (http://thecallr.com/docs/webhooks)
+    // poll for job status, could be replaced by a webhook (http://www.callr.com/docs/webhooks)
     do {
         sleep(1);
         $job = $api->call('jobs.get', [$importJobId]);
