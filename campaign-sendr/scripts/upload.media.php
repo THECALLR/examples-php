@@ -28,7 +28,7 @@ try {
     exit;
 }
 
-// poll for job status, could be replaced by a webhook (http://thecallr.com/docs/webhooks)
+// poll for job status, could be replaced by a webhook (http://www.callr.com/docs/webhooks)
 $job;
 do {
     sleep(1);
